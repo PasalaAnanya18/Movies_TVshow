@@ -124,7 +124,7 @@ option = st.radio("", ["Movies", "TV Shows"], key="big_radio")
 
 if option=='Movies':
     st.markdown("<h4 style='color:#FFD369;'>Oh great, let's help you find some movies! 🍿</h4>", unsafe_allow_html=True)
-    st.markdown('<div style="font-size:1.2rem;font-weight:600;color:#fff;margin-bottom:0.3em;">Select a movie:</div>', unsafe_allow_html=True)
+    st.markdown('<div style="font-size:1.2rem;font-weight:600;color:#fff;margin-bottom:12px;">Select a movie:</div>', unsafe_allow_html=True)
     selected_title = st.selectbox('',movies['title'].sort_values(),index=0,label_visibility='collapsed')
     n = st.slider('Number of recommendations:', 5, 20, 10)
     if st.button('Recommend Movies'):
@@ -142,7 +142,7 @@ if option=='Movies':
                 """, unsafe_allow_html=True)
 elif option == 'TV Shows':
     st.markdown("<h4 style='color:#FFD369;'>Oh great, let's help you find some TV shows! 📺</h4>", unsafe_allow_html=True)
-    st.markdown('<div style="font-size:1.2rem;font-weight:600;color:#fff;margin-bottom:0.3em;">Select a TV show:</div>', unsafe_allow_html=True)
+    st.markdown('<div style="font-size:1.2rem;font-weight:600;color:#fff;margin-bottom:12px;">Select a TV show:</div>', unsafe_allow_html=True)
     selected_name = st.selectbox('',tv['name'].sort_values(),index=0,label_visibility='collapsed')
     n = st.slider('Number of recommendations:', 5, 20, 10, key='tv')
     if st.button('Recommend TV Shows'):
