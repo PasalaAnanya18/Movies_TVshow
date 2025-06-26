@@ -45,7 +45,7 @@ st.markdown("""
     padding-bottom: 0px !important;
     }
     [data-baseweb="select"] {
-    margin-top: -30px !important;
+    margin-top: -8px !important;
     }
     div[role="radiogroup"] > label {
         font-size: 1.3rem !important;
