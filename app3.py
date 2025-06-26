@@ -142,7 +142,7 @@ if option=='Movies':
                 """, unsafe_allow_html=True)
 elif option == 'TV Shows':
     st.markdown("<h4 style='color:#FFD369;'>Oh great, let's help you find some TV shows! 📺</h4>", unsafe_allow_html=True)
-    st.markdown('<div style="font-size:1.2rem;font-weight:600;color:#fff;margin-bottom:0.3em;">Select a TV shows:</div>', unsafe_allow_html=True)
+    st.markdown('<div style="font-size:1.2rem;font-weight:600;color:#fff;margin-bottom:0.3em;">Select a TV show:</div>', unsafe_allow_html=True)
     selected_name = st.selectbox('',tv['name'].sort_values(),index=0,label_visibility='collapsed')
     n = st.slider('Number of recommendations:', 5, 20, 10, key='tv')
     if st.button('Recommend TV Shows'):
